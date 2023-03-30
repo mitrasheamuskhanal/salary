@@ -7,7 +7,10 @@ class execute
         string name = Console.ReadLine();
         Console.Write("What is Your Salary : ");
         double fullTimeSalary = Convert.ToDouble(Console.ReadLine()) ;
+        FTE fullTimeEmployee = new FTE();
+        fullTimeEmployee.Name = name;
         
+
 
     }
 }
