@@ -15,7 +15,7 @@ class execute
             fullTimeEmployee.Name = name;
             fullTimeEmployee.salary = fullTimeSalary;
             fullTimeEmployee.getFullName();
-            Console.WriteLine("Yearly salary" + fullTimeEmployee.getYearlySalary());
+            Console.WriteLine("Your salary is " + fullTimeEmployee.getYearlySalary());
         }
         else if (uservalue == "PTE")
         {
@@ -31,7 +31,8 @@ class execute
             partTimeEmployee.hourlyRate = hourlyrate;
             partTimeEmployee.workedHour = workedHour;
             partTimeEmployee.getFullName();
-            Console.WriteLine(partTimeEmployee.getYearlySalary());
+            Console.Write("And You have Worked for {0} Hour  And Your Hourly rate is {1} ", workedHour, hourlyrate) ;
+            Console.WriteLine("Your salary is "  + partTimeEmployee.getYearlySalary());
         }
         else {
             Console.WriteLine("You made an mistake");
@@ -50,7 +51,7 @@ class employee
 
     public virtual void getFullName()
     {
-        Console.WriteLine("employee name:" + Name);
+        Console.WriteLine("If You are " + Name);
     }
     public virtual double getYearlySalary()
     {
