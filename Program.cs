@@ -19,8 +19,24 @@ class execute
         }
         else if (uservalue == "PTE")
         {
-            Console.WriteLine("Your Full name ");
+            Console.WriteLine("Enter the full name of the part-time employee: ");
+            string pname = Console.ReadLine();
+            Console.Write("Your Hourly Rate : ");
+            double hourlyrate = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Your Worked Hour : ");
+            double workedHour = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Your Worked Hour ");
+            PTE partTimeEmployee = new PTE();
+            partTimeEmployee.Name = pname;
+            partTimeEmployee.hourlyRate = hourlyrate;
+            partTimeEmployee.workedHour = workedHour;
+            partTimeEmployee.getFullName();
+            Console.WriteLine(partTimeEmployee.getYearlySalary());
         }
+        else {
+            Console.WriteLine("You made an mistake");
+                
+          }
 
 
 
