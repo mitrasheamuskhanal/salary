@@ -19,7 +19,7 @@ class execute
         }
         else if (uservalue == "PTE")
         {
-            Console.WriteLine("Enter the full name of the part-time employee: ");
+            Console.WriteLine("Your Full Name: ");
             string pname = Console.ReadLine();
             Console.Write("Your Hourly Rate : ");
             double hourlyrate = Convert.ToDouble(Console.ReadLine());
