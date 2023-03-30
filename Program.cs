@@ -9,7 +9,12 @@ class execute
         double fullTimeSalary = Convert.ToDouble(Console.ReadLine()) ;
         FTE fullTimeEmployee = new FTE();
         fullTimeEmployee.Name = name;
-        
+        fullTimeEmployee.salary = fullTimeSalary;
+        fullTimeEmployee.getFullName();
+        Console.WriteLine("Yearly salary"+fullTimeEmployee.getYearlySalary());
+
+
+
 
 
     }
