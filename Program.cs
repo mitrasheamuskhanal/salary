@@ -5,7 +5,9 @@ class execute
     {
         Console.Write("Your Full Name ? :");
         string name = Console.ReadLine();
-        Console.Write("What is Your Salary");
+        Console.Write("What is Your Salary : ");
+        double fullTimeSalary = Convert.ToDouble(Console.ReadLine()) ;
+        
 
     }
 }
